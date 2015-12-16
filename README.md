@@ -138,11 +138,11 @@ There are two main ways to push your project to Github, through HTTPS and throug
 
 Now that you have git and github set up, click the bottom in the top right corner where it says `fork`.
 
-![](https://ipfs.pics/QmaDCKXy7bQMcSbPZ6QbyNUxZ4XVTZmE7dF3fg4zY4mRJ8)
+![](/img/fork.png)
 
 Only one member of each group needs to do this (everyone else in the group will contribute to the same repo). You can add the remaining group members as collaborators on the settings page
 
-![](https://ipfs.pics/QmQExuzqYzUH2x5Ws4YmdVev5U4rfA2dskNi3pUvqcCXih)
+![](/img/collaborator.png)
 
 Once you have created your fork, open a issue on https://github.com/sise-cweb/project-template/issues with the title "SISE-CWEB GROUPNUMBER" (replacing GROUPNUMBER with your actual group number) and in that issue post a link to your fork, the name, email and IST number of the people in your team.
 
@@ -162,6 +162,6 @@ $ npm install -g git-it
 $ git-it
 ```
 
-![](https://ipfs.pics/QmYo8YZLpuNTneqNuo3hc9ct49GTdfWDJ7ttpgF4j1PWDk)
+![](/img/gitit.png)
 
 ## Good luck with your project!
