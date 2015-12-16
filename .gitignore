@@ -2,6 +2,9 @@
 logs
 *.log
 
+**/node_modules
+**/*.log
+
 # Runtime data
 pids
 *.pid
