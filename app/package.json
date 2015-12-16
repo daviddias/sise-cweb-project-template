@@ -1,0 +1,32 @@
+{
+  "name": "app",
+  "version": "0.0.0",
+  "description": "Client application (front end) of the SISE-CWEB Project",
+  "main": "src/index.js",
+  "scripts": {
+    "codestyle": "standard",
+    "browserify": "browserify ../bl/src/index.js -s bl > src/js/bl.js",
+    "app": "static src -p 9090",
+    "start": "npm run browserify && npm run app"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sise-cweb/project-template.git"
+  },
+  "keywords": [
+    "SISE",
+    "CWEB"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sise-cweb/project-template/issues"
+  },
+  "homepage": "https://github.com/sise-cweb/project-template#readme",
+  "devDependencies": {
+    "browserify": "^12.0.1",
+    "node-static": "^0.7.7",
+    "standard": "^5.4.1"
+  }
+}
