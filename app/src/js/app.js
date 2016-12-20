@@ -1,4 +1,1 @@
-/* globals bl */
-
-console.log(bl.sayHello())
-
+console.log('Hello friend')

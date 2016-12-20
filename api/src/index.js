@@ -1,23 +1,35 @@
-var Hapi = require('hapi')
+'use strict'
 
-var server = module.exports = new Hapi.Server({
-  connections: {
-    routes: {
-      cors: true
+var http = require('http')
+var routes = require('./routes')
+
+var server
+
+function start (db, callback) {
+  var port = (Number(process.env.PORT)) || 9090
+
+  function listening (err) {
+    if (err) {
+      return callback(err)
     }
+
+    var info = { uri: `http://localhost:${port}` }
+    callback(null, info)
   }
-})
 
-server.connection({
-  port: 9000
-})
+  server = http.createServer(routes(db))
+  server.listen(port, listening)
+  return server
+}
 
-// load routes
-require('./routes/hello.js')
-
-server.start(function (err) {
-  if (err) {
-    return console.log('err:' + err)
+function stop (callback) {
+  if (server) {
+    server.close(callback)
+  } else {
+    callback(new Error('Server hasn\'t started yet'))
   }
-  console.log('server started: ' + server.info.uri)
-})
+}
+
+exports = module.exports
+exports.start = start
+exports.stop = stop

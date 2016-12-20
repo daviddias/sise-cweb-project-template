@@ -1,32 +1,25 @@
 {
-  "name": "api",
+  "name": "sise-rest-api",
   "version": "0.0.0",
-  "description": "RESTful API for the SISE-CWEB Project",
+  "description": "",
   "main": "src/index.js",
   "scripts": {
-    "test": "node tests/*-test.js",
-    "codestyle": "standard",
-    "start": "node src/index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/sise-cweb/project-template.git"
+    "test": "node test/test.js | tap-spec",
+    "start": "node src/start.js"
   },
   "keywords": [
     "SISE",
     "CWEB"
   ],
-  "author": "",
+  "author": "David Dias <daviddias.p@gmail.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/sise-cweb/project-template/issues"
-  },
-  "homepage": "https://github.com/sise-cweb/project-template#readme",
   "dependencies": {
-    "hapi": "^11.1.2"
+    "sise-db": "0.1.1"
   },
   "devDependencies": {
-    "standard": "^5.4.1",
-    "tape": "^4.2.2"
+    "pre-commit": "^1.2.2",
+    "sise-restful-api-tests": "0.2.2",
+    "standard": "^8.6.0",
+    "tap-spec": "^4.1.1"
   }
 }
