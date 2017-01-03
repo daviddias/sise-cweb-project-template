@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "codestyle": "standard",
-    "app": "static src -p 9090",
+    "app": "static src -p 8080",
     "start": "npm run app"
 
   },
