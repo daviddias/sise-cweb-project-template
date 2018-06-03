@@ -25,7 +25,6 @@
   "homepage": "https://github.com/sise-cweb/project-template#readme",
   "devDependencies": {
     "browserify": "^13.1.1",
-    "node-static": "^0.7.9",
-    "standard": "^8.6.0"
+    "node-static": "^0.7.9"
   }
 }

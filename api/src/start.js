@@ -2,7 +2,7 @@ var api = require('./index.js')
 var SISEDB = require('sise-db')
 var db = new SISEDB()
 
-var migrations = require('../node_modules/sise-db/test/migrations.json')
+var migrations = require('sise-cweb-data')
 
 db.import(migrations)
 

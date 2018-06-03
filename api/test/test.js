@@ -1,7 +1,7 @@
-var migrations = require('../node_modules/sise-db/test/migrations.json')
+var migrations = require('sise-cweb-data')
 
 var api = require('../src/index.js')
 
-var test = require('sise-restful-api-tests').base
+var test = require('sise-cweb-restful-api-tests').base
 
 test(migrations, api)
