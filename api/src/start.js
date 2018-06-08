@@ -1,5 +1,5 @@
 var api = require('./index.js')
-var SISEDB = require('sise-db')
+var SISEDB = require('sise-cweb-db')
 var db = new SISEDB()
 
 var migrations = require('sise-cweb-data')
